@@ -5,12 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
         <link rel="stylesheet" href="css/style.css">
     
         <title>Joaquin Javier Pastore Barrios - Web & App Developer</title>
 
     </head>
     <body>
+
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav_logo">Joaquin</a>
@@ -32,7 +35,7 @@
                             </a>
                         </li>
                         <li class="nav_item">
-                            <a href="#services" class="nav_link">
+                            <a href="#studies" class="nav_link">
                                 <i class='bx bx-book-bookmark nav_icon'></i> Estudios
                             </a>
                         </li>
@@ -86,7 +89,7 @@
                             </svg>
                         </div>
                         <div class="home_data">
-                            <h1 class="home_title">!Hey, soy Joaquin!</h1>
+                            <h1 class="home_title wow animate__animated animate__slideInLeft">!Hey, soy Joaquin!</h1>
                             <h3 class="home_subtitle">Web & App Developer</h3>
                             <p class="home_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quisquam dolore asperiores hic, neque magni porro repellat. Neque animi quisquam fugit!</p>
                             <a href="#contact" class="button button--flex">
@@ -127,7 +130,7 @@
                             <span class="about_info-name">Companies <br> worked</span>
                         </div>
                         <div class="about_buttons">
-                            <a href="CV.pdf" class="button button--flex" download>
+                            <a href="CV.pdf" class="button button--flex" download="CV_Joaquin">
                                 Descargar CV <i class='bx bx-download button_icon'></i>
                             </a>
                         </div>
@@ -143,7 +146,7 @@
                     <div>
                         <div class="skills_content skills_open">
                             <div class="skills_header">
-                                <i class='bx bx-window-open skills_icon'></i>
+                                <i class='bx bx-code-block skills_icon'></i>
                                 <div>
                                     <h1 class="skills_title">Frontend Developer</h1>
                                     <span class="skills_subtitle">More than 4 years</span>
@@ -267,9 +270,85 @@
                 </div>
             </section>
 
+            <section class="qualification section" id="studies">
+                <h2 class="section_title">Estudios</h2>
+                <span class="section_subtitle">My personal journey</span>
+
+                <div class="qualification_container container">
+                    <div class="qualification_tabs">
+                        <div class="qualification_button button--flex qualification_active" data-target='#education'>
+                            <i class='bx bxs-graduation qualification_icon'></i>
+                            Educación
+                        </div>
+                        <div class="qualification_button button--flex" data-target='#work'>
+                            <i class='bx bxs-briefcase qualification_icon'></i>
+                            Experiencia Laboral
+                        </div> 
+                    </div>
+
+                    <div class="qualification_sections">
+                        <div class="qualification_content qualification_active" data-content id="education">
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">Bachillerato Tecnológico</h3>
+                                    <span class="qualification_subtitle">España - IES Alonso Quesada</span>
+                                    <div class="qualification_calendar">
+                                        <i class='bx bxs-calendar'></i>
+                                        2016-2018
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualifications_line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification_title">Grado en Ingeniería Informática</h3>
+                                    <span class="qualification_subtitle">España - Universidad de las Palmas de G.C</span>
+                                    <div class="qualification_calendar">
+                                        <i class='bx bxs-calendar'></i>
+                                        2018-2022
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qualification_content" data-content id="work">
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">Prácticas Externas</h3>
+                                    <span class="qualification_subtitle">Sic4Change</span>
+                                    <div class="qualification_calendar">
+                                        <i class='bx bxs-calendar'></i>
+                                        2021-2022
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
         </main>
 
-
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/wow.min.js"></script>
         <script src="js/main.js"></script>
+
     </body>
     </html>

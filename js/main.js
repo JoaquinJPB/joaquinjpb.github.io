@@ -1,4 +1,9 @@
 
+$(document).ready(function(){
+    new WOW().init();
+    console.log("AE");
+});
+
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close');
@@ -46,3 +51,24 @@ function toggleSkills(){
 skillsHeader.forEach((e) =>{
     e.addEventListener('click', toggleSkills);
 });
+
+/* ************ QUALICATION TABS ************ */
+
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target);
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('qualification_active');
+        })
+        target.classList.add('qualification_active');
+
+        tabs.forEach(tab => {
+            tab.classList.remove('qualification_active');
+        })
+        tab.classList.add('qualification_active');
+    })
+})
