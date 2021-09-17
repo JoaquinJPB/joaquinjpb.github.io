@@ -6,6 +6,7 @@
         
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
         <link rel="stylesheet" href="css/style.css">
     
@@ -343,10 +344,71 @@
                 </div>
             </section>
 
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section_title">Portfolio</h2>
+                <span class="section_subtitle">Most recent work</span>
+
+                <div class="portfolio_container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="images/todo-list-js.png" alt="todo-list-js" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">JS Todo List</h3>
+                                <p class="portfolio_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quis tempore optio, consectetur ?</p>
+                                <a href="https://github.com/JoaquinJPB/JSTodoList" class="button button--flex button--small portfolio_button" target="_blank">
+                                    Github
+                                    <i class='bx bxl-github'></i>
+                                    <i class='bx bx-right-arrow-alt button_icon'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="images/artificial-neural-network.jpg" alt="Red neuronal" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">Reconocimiento de imagenes mediante IA</h3>
+                                <p class="portfolio_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quis tempore optio, consectetur ?</p>
+                                <a href="https://github.com/JoaquinJPB/AI-ImageRecognition" class="button button--flex button--small portfolio_button" target="_blank">
+                                    Github
+                                    <i class='bx bxl-github'></i>
+                                    <i class='bx bx-right-arrow-alt button_icon'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio_content grid swiper-slide">
+                            <img src="images/stardew-valley.PNG" alt="Stardew-Valley-memory-game" class="portfolio_img">
+
+                            <div class="portfolio_data">
+                                <h3 class="portfolio_title">Stardew Valley: Juego de Memoria</h3>
+                                <p class="portfolio_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quis tempore optio, consectetur ?</p>
+                                <a href="https://joaquinjpb.github.io/Stardew-Valley-memory-game/" class="button button--flex button--small portfolio_button" target="_blank">
+                                    Sitio Web
+                                    <i class='bx bx-right-arrow-alt button_icon'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class='bx bx-chevron-right swiper-portfolio-icon'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-chevron-left swiper-portfolio-icon'></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
+
+            </section>
+
         </main>
 
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/main.js"></script>
 
