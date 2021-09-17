@@ -273,7 +273,7 @@ img{
 }
 
 .home_social-icon{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--first-color);
 }
 
@@ -307,6 +307,7 @@ img{
 
 .home_description{
     margin-bottom: var(--mb-2);
+    text-align: justify;
 }
 
 .home_scroll{
@@ -377,7 +378,7 @@ img{
 }
 
 .about_description{
-    text-align: center;
+    text-align: justify;
     margin-bottom: var(--mb-2-5);
 }
 
@@ -623,6 +624,7 @@ img{
 
 .portfolio_description{
     margin-bottom: var(--mb-0-75);
+    text-align: justify;
 }
 
 .portfolio_button:hover .button_icon{
@@ -708,6 +710,7 @@ img{
     border: none;
     outline: none;
     padding: .25rem .5rem .5rem 0;
+    resize: none;
 }
 
 /* ************ FOOTER ************ */

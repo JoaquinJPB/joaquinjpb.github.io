@@ -20,6 +20,15 @@ if(navClose){
     })
 }
 
+(function age(){
+    let birth = new Date('2000-05-03');
+
+    let age = new Date(new Date() - birth).getFullYear() - 1970;
+
+    let div_age = document.getElementById("age");
+    div_age.innerHTML=age;
+})();
+
 /* ************ REMOVE MOBILE MENU ************ */
 const navLink = document.querySelectorAll('.nav_link');
 
