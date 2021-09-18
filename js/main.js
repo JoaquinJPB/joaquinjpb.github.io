@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
     new WOW().init();
-    console.log("AE");
 });
 
 const navMenu = document.getElementById('nav-menu'),
@@ -33,8 +32,7 @@ if(navClose){
 const navLink = document.querySelectorAll('.nav_link');
 
 function linkAction(){
-    const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.remove('show-menu');
+    document.getElementById('nav-menu').classList.remove('show-menu');
 }
 
 navLink.forEach(n => n.addEventListener('click',linkAction));
@@ -120,3 +118,39 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+const sections = document.querySelectorAll('section[id]');
+
+function scrollActive(){
+    const scrollY = window.scrollY;
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        let sectionId = current.getAttribute('id');
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link');
+        } else{
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link');
+        }
+
+    })
+}
+
+window.addEventListener('scroll', scrollActive);
+
+/*==================== CHANGE BACKGROUND HEADER ====================*/
+function scrollHeader(){
+    this.scrollY >= 80 ? document.getElementById('header').classList.add('scroll-header') : document.getElementById('header').classList.remove('scroll-header');
+} 
+
+window.addEventListener('scroll',scrollHeader);
+
+/*==================== SHOW SCROLL ====================*/
+function scrollUp(){
+    this.scrollY >= 560 ? document.getElementById('scroll-up').classList.add('show-scroll') : document.getElementById('scroll-up').classList.remove('show-scroll');
+}
+
+window.addEventListener('scroll',scrollUp);
