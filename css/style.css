@@ -1038,6 +1038,10 @@ img{
         width: 500px;
     }
 
+    .home_data{
+        width: 450px;
+    }
+
     .home_social{
         transform: translateX(-6rem) ;
     }
