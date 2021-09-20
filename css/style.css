@@ -115,6 +115,10 @@ body{
     color: var(--text-color);
 }
 
+body,html{
+    overflow-x: hidden;
+}
+
 h1,h2,h3,h4{
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
@@ -297,7 +301,7 @@ img{
 }
 
 .home_blob{
-    width: 400px;
+    max-width: 80vw;
     fill: var(--first-color);
 }
 
@@ -778,14 +782,14 @@ img{
 .footer_copy{
     font-size: var(--smaller-font-size);
     text-align: center;
-    color: var(--text-color-light);
     margin-top: var(--mb-3);
 }
 
 .footer_title,
 .footer_subtitle,
 .footer_link,
-.footer_social{
+.footer_social,
+.footer_copy{
     color: #fff;
 }
 
@@ -856,6 +860,10 @@ img{
         grid-template-columns: .25fr 3fr;
     }
 
+    .home_data{
+        width: 90vw;
+    }
+
     .home_blob{
         width: 380px;
     }
@@ -868,7 +876,14 @@ img{
         gap: .5rem;
     }
 
+    .portfolio_img{
+        width: 180px;
+        height: 180px;
+    }
 
+    .contact_form{
+        width: 88vw;
+    }
     
 }
 
@@ -884,7 +899,6 @@ img{
 
     .home_img{
         order: 1;
-        justify-self: center;
     }
 
     .about_container,
